@@ -1,0 +1,13 @@
+{
+	"$schema": "https://unpkg.com/jsrepo@1.17.2/schemas/project-config.json",
+	"repos": ["github/ieedan/geist/tree/jsrepo"],
+	"includeTests": false,
+	"watermark": true,
+	"formatter": "prettier",
+	"paths": {
+		"*": "./src/lib/ts/blocks",
+		"ui": "$lib/components/ui",
+		"icons": "$lib/assets/icons",
+		"lib": "$lib/"
+	}
+}
