@@ -15,13 +15,40 @@ Copy [app.css](https://github.com/shyakadavis/geist/blob/main/src/app.css) to `s
 
 Copy [tailwind.config.ts](https://github.com/shyakadavis/geist/blob/main/tailwind.config.ts) to `tailwind.config.ts`
 
-### 3. Install fonts
+Install tailwind dependencies:
+```bash
+npm install @pyncz/tailwind-mask-image @tailwindcss/typography tailwindcss-animate -D
+```
+
+### 3. Setup vite svg plugin:
+
+Install plugin:
+```bash
+npm install @poppanator/sveltekit-svg -D
+```
+
+Add plugin in `vite.config.ts`:
+```diff
++import svg from '@poppanator/sveltekit-svg';
+import { sveltekit } from '@sveltejs/kit/vite';
+import { defineConfig } from 'vite';
+
+export default defineConfig({
+	plugins: [
+		sveltekit(), 
++		svg()
+	]
+});
+
+```
+
+### 4. Install fonts
 
 ```bash
 npm install @fontsource/geist-sans @fontsource/geist-mono -D
 ```
 
-### 4. Setup Theming
+### 5. Setup Theming
 
 ```bash
 npm install mode-watcher -D
@@ -39,7 +66,7 @@ Add `<ModeWatcher/>` to `src/routes/+layout.svelte`
 {@render children()}
 ```
 
-### 5. Setup jsrepo
+### 6. Setup jsrepo
 
 Run `init`:
 ```bash
@@ -63,7 +90,7 @@ Configure paths in `jsrepo.json`:
 }
 ```
 
-### 6. Add components
+### 7. Add components
 
 ```bash
 npx jsrepo add # list
