@@ -1,7 +1,7 @@
 /*
-	jsrepo 1.17.2
+	jsrepo 1.17.5
 	Installed from github/ieedan/geist/tree/jsrepo
-	12-5-2024
+	12-6-2024
 */
 
 import Accessibility from '$lib/assets/icons/accessibility.svg?component';
