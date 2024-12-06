@@ -72,14 +72,14 @@ Add `<ModeWatcher/>` to `src/routes/+layout.svelte`
 
 Run `init`:
 ```bash
-npx jsrepo init --project --repos github/ieedan/geist/tree/jsrepo
+npx jsrepo init --project --repos github/ieedan/geist
 ```
 
 Configure paths in `jsrepo.json`:
 ```diff
 {
-	"$schema": "https://unpkg.com/jsrepo@1.17.2/schemas/project-config.json",
-	"repos": ["github/ieedan/geist/tree/jsrepo"],
+	"$schema": "https://unpkg.com/jsrepo@1.18.0/schemas/project-config.json",
+	"repos": ["github/ieedan/geist"],
 	"includeTests": false,
 	"watermark": true,
 	"formatter": "prettier",

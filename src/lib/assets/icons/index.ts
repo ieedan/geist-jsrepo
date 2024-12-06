@@ -1,6 +1,6 @@
 /*
-	jsrepo 1.17.5
-	Installed from github/ieedan/geist/tree/jsrepo
+	jsrepo 1.18.0
+	Installed from github/ieedan/geist/tree/jsrepo-updates
 	12-6-2024
 */
 
